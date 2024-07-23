@@ -1,0 +1,16 @@
+I am sending an Data Base Script, Use This Script You can Create a Table, Instated of Restoring Data.
+
+CREATE TABLE [dbo].[NIC_EmpMain](
+	[EMId] [int] IDENTITY(1,1) NOT NULL,
+	[Name] [varchar](50) NULL,
+	[Phno] [varchar](10) NULL,
+	[Pin] [int] NULL,
+	[Class] [int] NULL,
+	[Markes] [decimal](18, 2) NULL,
+	[Activate] [char](1) NULL,
+ CONSTRAINT [PK_NIC_EmpMain] PRIMARY KEY CLUSTERED 
+(
+	[EMId] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
