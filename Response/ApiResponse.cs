@@ -10,8 +10,8 @@ namespace NIC_Demo_Project.Response
         public string statusCode { get; set; } = "200";
         public string status { get; set; }
         public dynamic result { get; set; }
-        public dynamic TotalCount { get; set; } = 0;
         public string message { get; set; }
+        public PagingResponse PagingDetails { get; set; }
 
     }
    

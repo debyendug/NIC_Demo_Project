@@ -13,9 +13,9 @@ namespace NIC_Demo_Project.Controllers
         private IMediator _mediator;
         protected IMediator Mediator => _mediator ??= (IMediator)HttpContext.RequestServices.GetService(typeof(IMediator));
 
-        [HttpGet]
+        [HttpPost]
         [Route("GetAll")]
-        public async Task<IActionResult> GetAll([FromHeader] GetAllNicEmp command)
+        public async Task<IActionResult> GetAll([FromBody] GetAllNicEmp command)
         {
             return Ok(await Mediator.Send(command));
         }

@@ -17,7 +17,7 @@ builder.Services.AddSwaggerGen(c =>
 });
 
 builder.Services.AddDbContext<ApplicationContext>(options => 
-options.UseSqlServer(builder.Configuration.GetConnectionString("CompanyConnStr"),
+options.UseSqlServer(builder.Configuration.GetConnectionString("ConnStr"),
 b => b.MigrationsAssembly(typeof(ApplicationContext).Assembly.FullName)));
 
 

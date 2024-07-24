@@ -9,12 +9,16 @@
   <ItemGroup>
     <Compile Remove="Features\FaMasterPartyFeatures\**" />
     <Compile Remove="Features\TranSupplementAttendanceFeatures\**" />
+    <Compile Remove="Logs\**" />
     <Content Remove="Features\FaMasterPartyFeatures\**" />
     <Content Remove="Features\TranSupplementAttendanceFeatures\**" />
+    <Content Remove="Logs\**" />
     <EmbeddedResource Remove="Features\FaMasterPartyFeatures\**" />
     <EmbeddedResource Remove="Features\TranSupplementAttendanceFeatures\**" />
+    <EmbeddedResource Remove="Logs\**" />
     <None Remove="Features\FaMasterPartyFeatures\**" />
     <None Remove="Features\TranSupplementAttendanceFeatures\**" />
+    <None Remove="Logs\**" />
   </ItemGroup>
 
   <ItemGroup>
