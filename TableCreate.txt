@@ -1,4 +1,4 @@
-I am sending an Data Base Script, Use This Script You can Create a Table, Instated of Restoring Data.
+I am sending an Data Base Script also, Use This Script You can Create a Table, Instated of Restoring Data.
 
 CREATE TABLE [dbo].[NIC_EmpMain](
 	[EMId] [int] IDENTITY(1,1) NOT NULL,
@@ -14,3 +14,7 @@ CREATE TABLE [dbo].[NIC_EmpMain](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
+
+
+In my code Please go to the appsettings.json and replace the Database connection String with yours Database USERID and PASSWORD. 
+Then run that code will Smoothly running.  
